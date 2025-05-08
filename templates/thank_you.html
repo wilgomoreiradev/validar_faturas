@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obrigado!</title>
+  <script>
+    window.onload = function() {
+      window.location.href = "{{ url_for('download') }}";
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white shadow-md rounded-lg p-8 max-w-sm w-full text-center">
+    <h1 class="text-2xl font-semibold text-gray-800">Obrigado!</h1>
+    <p class="text-gray-600 mt-4">O seu download vai começar em breve.</p>
+    <p class="text-gray-500 text-sm mt-2">Se não iniciar, <a href="{{ url_for('download') }}" class="text-indigo-600 hover:underline">clique aqui</a>.</p>
+  </div>
+</body>
+</html>

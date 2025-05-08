@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia Validação de Faturas e IRS 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white shadow-lg rounded-xl p-8 max-w-md w-full">
+    <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">📥 Receba o Guia Gratuito</h1>
+    <p class="text-gray-600 mb-6 text-center">Valide as suas faturas e organize-se para o IRS de 2025</p>
+    <form method="post" class="space-y-4">
+      <div>
+        <label for="name" class="block text-gray-700">O seu nome <span class="text-gray-400">(opcional)</span></label>
+        <input type="text" id="name" name="name" placeholder="Nome" class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      </div>
+      <div>
+        <label for="email" class="block text-gray-700">O seu email <span class="text-red-500">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="email@exemplo.com" class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      </div>
+      <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition">Receber guia gratuito</button>
+    </form>
+  </div>
+</body>
+</html>
